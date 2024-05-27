@@ -21,9 +21,9 @@ Before you begin, ensure you have the following installed:
 3.  Install dependencies:
     npm install
     
-5. Run Development build
+5. Run Development build:
     npm run start
    
-7. To build production build
+7. To build production build:
     npm run build
 
