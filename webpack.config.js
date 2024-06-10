@@ -11,7 +11,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     publicPath: "/",
   },
-  devtool: "cheap-module-source-map",
+  devtool: "source-map",
   module: {
     rules: [
       {
@@ -31,7 +31,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    // new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
@@ -40,11 +40,11 @@ module.exports = {
       chunkFilename: "[id].css",
     }),
   ],
-  optimization: {
-    splitChunks: {
-      chunks: "all",
-    },
-  },
+  // optimization: {
+  //   splitChunks: {
+  //     chunks: "all",
+  //   },
+  // },
   devServer: {
     static: {
       directory: path.join(__dirname, "dist"),
